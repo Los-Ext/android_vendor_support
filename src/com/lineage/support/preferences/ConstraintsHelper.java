@@ -44,7 +44,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
-import com.android.internal.custom.hardware.LineageHardwareManager;
 import com.lineage.support.R;
 
 
@@ -179,7 +178,7 @@ public class ConstraintsHelper {
                 }
             }
 
-            // Check if a system feature is available
+            /** Check if a system feature is available
             String rFeature = a.getString(R.styleable.lineage_SelfRemovingPreference_requiresFeature);
             if (rFeature != null) {
                 boolean negated = isNegated(rFeature);
@@ -193,7 +192,7 @@ public class ConstraintsHelper {
                 if (available == negated) {
                     return false;
                 }
-            }
+            }**/
 
             // Check a boolean system property
             String rProperty = a.getString(R.styleable.lineage_SelfRemovingPreference_requiresProperty);
